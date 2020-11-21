@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './Quiz1.dart';
+import './quiz1.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,7 +35,7 @@ class AnimalQuizState extends State<AnimalQuiz> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(4.0),
               ),
-              onPressed: () {},
+              onPressed: () => StartQuiz(),
               color: Colors.blue,
               textColor: Colors.white,
               child: Container(
@@ -65,7 +65,8 @@ class AnimalQuizState extends State<AnimalQuiz> {
   // Start Quiz method
   void StartQuiz() {
     setState(() {
-      Navigator.push(context, new MaterialPageRoute(builder: (context) => new Quiz1 ));
+      Navigator.push(
+          context, new MaterialPageRoute(builder: (context) => new Quiz1()));
     });
   }
 }
