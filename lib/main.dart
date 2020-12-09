@@ -63,6 +63,7 @@ class AnimalQuizState extends State<AnimalQuiz> {
   }
 
   // Start Quiz method
+  // ignore: non_constant_identifier_names
   void StartQuiz() {
     setState(() {
       Navigator.push(
